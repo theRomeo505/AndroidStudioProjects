@@ -42,7 +42,6 @@ class PhotoListItem extends StatelessWidget{
   PhotoListItem({this.url,this.username,this.urlb});
 
   Widget build(BuildContext context){
-
     return  FlatButton(
       padding: const EdgeInsets.all(8),
       onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>BigPhoto(urlb: urlb)));},
