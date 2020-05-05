@@ -71,7 +71,7 @@ class Photo{
   factory Photo.fromJson(Map<String, dynamic> json){
     return Photo(
       urlsm: json['urls']['thumb'] as String,
-      urlbg:json['urls']['full'] as String,
+      urlbg:json['urls']['regular'] as String,
       username: json['user']['name'] as String,
     );
   }
